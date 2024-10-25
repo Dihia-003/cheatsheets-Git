@@ -1,4 +1,4 @@
-<link href="style. css" rel="stylesheet"></link> 
+
 
 # Cheat Sheet : `git reset` vs `git revert`
 
@@ -71,17 +71,56 @@
 - **`git revert`** : Pour annuler des commits dans un projet partagé sans altérer l'historique.
 
 
-#  Différence entre `git log` et `git show`
+Voici un cheatsheet en Markdown pour comprendre la différence entre `git log` et `git show` :
+
+
+
+# Différence entre `git log` et `git show`
 
 ## `git log`
-
-### Fonction
-Affiche l'historique des commits dans le dépôt.
-
-### Utilisation principale
-Permet de voir les commits récents, avec des informations telles que l'identifiant du commit, l'auteur, la date et le message de commit.
-
-### Commandes courantes
-- **Affichage de l'historique** :
-
+- **Description** : Affiche l'historique des commits.
+- **Utilisation** :
+  ```bash
   git log
+  ```
+- **Options courantes** :
+  - `--oneline` : Affiche chaque commit sur une seule ligne.
+    ```bash
+    git log --oneline
+    ```
+  - `--graph` : Affiche un graphe ASCII de l'historique des branches.
+    ```bash
+    git log --graph --oneline
+    ```
+  - `-n <nombre>` : Limite le nombre de commits affichés.
+    ```bash
+    git log -n 5
+    ```
+  - `--author="<nom>"` : Filtre les commits par auteur.
+    ```bash
+    git log --author="Nom de l'Auteur"
+    ```
+
+## `git show`
+- **Description** : Affiche les détails d'un commit spécifique.
+- **Utilisation** :
+  ```bash
+  git show <commit_id>
+  ```
+- **Exemples** :
+  - Afficher un commit spécifique :
+    ```bash
+    git show abc123
+    ```
+  - Afficher un commit et les changements en format diff :
+    ```bash
+    git show abc123 --stat
+    ```
+
+## Résumé
+- **`git log`** : Pour explorer l'historique des commits.
+- **`git show`** : Pour voir les détails et les changements d'un commit spécifique.
+
+```
+
+
