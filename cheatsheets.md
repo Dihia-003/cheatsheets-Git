@@ -1,3 +1,5 @@
+<link href="style. css" rel="stylesheet"></link> 
+
 # Cheat Sheet : `git reset` vs `git revert`
 
 | Caractéristique            | `git reset`                                | `git revert`                                          |
@@ -67,3 +69,19 @@
 
 - **`git reset`** : Lorsque vous souhaitez annuler des commits récents sur une branche locale.
 - **`git revert`** : Pour annuler des commits dans un projet partagé sans altérer l'historique.
+
+
+#  Différence entre `git log` et `git show`
+
+## `git log`
+
+### Fonction
+Affiche l'historique des commits dans le dépôt.
+
+### Utilisation principale
+Permet de voir les commits récents, avec des informations telles que l'identifiant du commit, l'auteur, la date et le message de commit.
+
+### Commandes courantes
+- **Affichage de l'historique** :
+
+  git log
